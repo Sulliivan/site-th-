@@ -1,0 +1,428 @@
+/*document information
+    - Document : thé thème
+    - Version : 1.0.0
+    - Author : Sullivan
+*/
+
+/* COLORS
+    -Defaut body text #eee
+    - h1               #eee
+    - h2                #333333
+    - h3
+
+    - button
+    - buttonn:hover
+
+    - icon          color:green
+
+    - border
+*/
+
+/* FONTS
+    - Default       lato
+    - Subtitle
+*/
+
+
+
+/* CSS DIRECTORY
+    1. =GLOBAL
+    2. =HEADER
+    3. =PRODUITS
+
+*/
+
+
+
+/* GLOBAL
+================================*/
+
+
+html {
+    background-color: #fff;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'lato','arial', sans-serif;
+    text-transform: uppercase;
+
+}
+
+h1 {
+    color: #eee;
+    letter-spacing: -1px;
+    font-weight: 300;
+    word-spacing: 8px;
+        
+}
+
+h2 {
+    color: #333333;
+    font-size: 250%;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+        
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: green;
+    width: 100px;
+    content: " ";
+    margin: auto;
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 160%;
+    
+}
+
+
+p{
+    font-size: 12;
+    font-weight: 300;
+    line-height: 24px;
+    
+    
+}
+
+section{
+    padding: 30px 0 60px 0;
+}
+
+
+
+/* HEADER
+================================*/
+
+header {
+    background-image:linear-gradient(   rgba(0,242,96,0.4),
+                                        rgba(7,117,230,0.6)
+                                    ), 
+                                url(../images/header.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.home-title{
+    position: absolute;
+    top: 30%;
+}
+
+.home-title h1 {
+    font-size: 340%;
+    
+}
+
+.home-title h1 span {
+    font-weight: 700;
+
+}
+
+.home-title p {
+    color: #fff;
+    
+}
+
+
+/* button */
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 1s, color 1s, border 1s;
+    margin-bottom: 20px;
+}
+.btn-full {
+    background-color: azure;
+    color: #5ee077;
+    margin-right:15px;
+}
+
+.btn-ghost {
+    border: 1px solid #fff;
+    color: #fff;
+        
+}
+
+.btn-full:hover {
+    background-color:  #5ee077;
+    color: #fff;
+
+}
+
+.btn-ghost:hover {
+    background-color: #5ee077;
+    border: 1px solid #5ee077;
+    color: #fff;
+}
+
+
+
+/* Nos Produits
+================================*/
+.produits-plus {
+    margin: 20px 0;
+}
+
+.produits-plus:hover .produits-icon {
+    transform: translateX(20px);
+}
+
+.produits-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.produits-icon {
+    font-size: 34px;
+        color:green;
+    transition: all 1s;
+}
+
+
+/* Famille des thés
+========================*/
+
+.famille-thé {
+    background-color: mediumaquamarine;
+    
+}
+
+
+
+.famille-details {
+    background-color: blanchedalmond;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+}
+
+.famille-details img {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    
+}
+
+.famille-details h4 {
+    text-align: center;
+}
+
+
+/*GALERIES PHOTOS
+===================================- */
+
+
+.galeries-img {
+    display: block;
+    background-size: cover;
+    background-position: top, center;
+    background-repeat: no-repeat;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    margin-bottom: 30px;
+    
+}
+
+.galeries-titre {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    
+}
+
+.galeries-img {
+    color: #fff;
+}
+
+/*Clients
+===================================- */
+
+.clients{
+    background-image:linear-gradient(   rgba(0,242,96,0.4),
+                                        rgba(7,117,230,0.6)
+                                    ), 
+        url(../images/the-paysage.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+
+.clients h2 {
+    color: #fff;
+    
+}
+
+.clients h2:after {
+    background-color: #fff;
+    
+}
+    
+
+
+blockquote {
+    color: #fff;
+    padding:  5px;
+    font-style: italic;
+    line-height: 130%;
+    
+}
+
+blockquote:before {
+    content:"\201C";
+    font-size: 800%;
+    font-family: 'Sanchez', serif;
+    position: absolute;
+    top: 30px;
+    left: 5px;
+    color: rgba(255,255,255,0.6)
+    
+        
+       
+}
+
+
+cite{
+    font-size: 90%;
+    display: block;
+    margin-top: 20px;
+    
+}
+
+cite im{
+    border-radius: 50%;
+    height: 50px;
+    margin-right: 10px;
+}
+
+/* Pack
+===================================- */
+
+.pack {
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+.pack h3 {
+    color: forestgreen;
+    font-weight: 400;
+}
+
+.pack h4 {
+    font-size: 200%;
+    font-weight: 100;
+}
+
+.pack span {
+    font-weight: 100;
+    font-size: 40%;
+    position: relative;
+    top: -15px;
+    left: 2px;
+}
+
+.pack-premium {
+    background-color: #98f4d4
+}
+
+
+.pack-title {
+    padding: 10px 10px 0 10;
+    border-bottom: 1px solid  #e3e0e0;
+}
+
+.pack-title-premium {
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    background-color: #fff;
+    color: green;
+    border-radius: 10px;
+    padding: 5px;
+    
+}
+
+.pack-content ul {
+    list-style: none;
+    padding: 20px;
+    font-weight: 300;
+    line-height: 35px;
+    
+}
+
+.pack-content ul li i {
+    font-size: 90%;
+    margin-right: 10px;
+}
+
+.pack-signup {
+    text-align: center;
+    
+}
+
+.pack-signup:hover .btn-pack {
+    background-color: #25ff25;
+    color: #ffffff;
+
+}
+
+.btn-pack {
+    background-color: forestgreen;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+
+/* Contact Form
+===================================- */
+
+
+
+.contact-form {
+    margin-bottom: 30px;
+    
+}
+
+.contact-message {
+    width: 100%;
+}
+
+.btn-contact {
+    background-color: green;
+    color: #fff;
+}
+
+
+/* footer
+===================================- */
+
+
+footer {
+    background-color: black;
+    color: #fff;
+    height: 60px;
+    padding: 20px 20px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+
+.copyright a {
+    color: #1d34e5
+}
+
